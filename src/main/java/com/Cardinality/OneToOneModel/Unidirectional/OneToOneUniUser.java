@@ -14,8 +14,8 @@ public class OneToOneUniUser {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name= "address_id", referencedColumnName = "id")
-    private OneToOneUniAddress address;
+//    @OneToOne(cascade = CascadeType.ALL)
+//    @JoinColumn(name= "address_id", referencedColumnName = "id")
+//    private OneToOneUniAddress address;
 
 }

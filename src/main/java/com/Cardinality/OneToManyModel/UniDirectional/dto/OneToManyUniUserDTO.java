@@ -13,4 +13,19 @@ public class OneToManyUniUserDTO {
     private String name;
     private List<OneToManyUniOrderDTO> orders;
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public List<OneToManyUniOrderDTO> getOrders() {
+        return orders;
+    }
+
+    public void setOrders(List<OneToManyUniOrderDTO> orders) {
+        this.orders = orders;
+    }
 }

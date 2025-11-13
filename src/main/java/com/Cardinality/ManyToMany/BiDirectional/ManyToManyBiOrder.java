@@ -31,4 +31,27 @@ public class ManyToManyBiOrder {
     )
     private List<ManyToManyBiProduct>  products = new ArrayList<>();
 
+    public int getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(int orderId) {
+        this.orderId = orderId;
+    }
+
+    public int getOrderNumber() {
+        return orderNumber;
+    }
+
+    public void setOrderNumber(int orderNumber) {
+        this.orderNumber = orderNumber;
+    }
+
+    public List<ManyToManyBiProduct> getProducts() {
+        return products;
+    }
+
+    public void setProducts(List<ManyToManyBiProduct> products) {
+        this.products = products;
+    }
 }

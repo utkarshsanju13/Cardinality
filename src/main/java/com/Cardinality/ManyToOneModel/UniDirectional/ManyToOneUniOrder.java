@@ -19,7 +19,27 @@ public class ManyToOneUniOrder {
     @JoinColumn(name = "user_id_fk", referencedColumnName = "userId")
     private ManyToOneUniUser user;
 
+    public int getId() {
+        return id;
+    }
 
+    public void setId(int id) {
+        this.id = id;
+    }
 
+    public String getProductName() {
+        return productName;
+    }
 
+    public void setProductName(String productName) {
+        this.productName = productName;
+    }
+
+    public ManyToOneUniUser getUser() {
+        return user;
+    }
+
+    public void setUser(ManyToOneUniUser user) {
+        this.user = user;
+    }
 }

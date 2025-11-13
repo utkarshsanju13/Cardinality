@@ -21,4 +21,27 @@ public class OneToManyUniUser {
     @JoinColumn(name = "user_id_fk",referencedColumnName = "userId")
     private List<OneToManyUniOrders> orders;
 
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public List<OneToManyUniOrders> getOrders() {
+        return orders;
+    }
+
+    public void setOrders(List<OneToManyUniOrders> orders) {
+        this.orders = orders;
+    }
 }

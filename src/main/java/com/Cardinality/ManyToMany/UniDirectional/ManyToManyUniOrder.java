@@ -25,4 +25,28 @@ public class ManyToManyUniOrder {
             inverseJoinColumns = @JoinColumn(name = "productId")
     )
     private List<ManyToManyUniProduct> products = new ArrayList<>();
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Long getOrderNumber() {
+        return orderNumber;
+    }
+
+    public void setOrderNumber(Long orderNumber) {
+        this.orderNumber = orderNumber;
+    }
+
+    public List<ManyToManyUniProduct> getProducts() {
+        return products;
+    }
+
+    public void setProducts(List<ManyToManyUniProduct> products) {
+        this.products = products;
+    }
 }
